@@ -1,0 +1,15 @@
+{
+  "name": "utm-web-presentations",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open slides.md",
+    "build": "slidev build slides.md",
+    "build:pages": "slidev build slides.md --base /utm-web-presentations/ --without-notes",
+    "export": "slidev export slides.md"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.0.0"
+  }
+}
