@@ -253,9 +253,9 @@ layout: two-cols
 7. UX/UI and Accessibility Officer
 8. SEO and Digital Marketing Officer
 9. Web and Marketing Analytics Officer
-10. BI, Data, and Governance Officer
+10. BI and Data Engineer
 
-Creative production, advanced security, legal, procurement, and university-wide ICT authority remain shared or centrally coordinated where appropriate.
+Governance, PMO, and PTJ coordination are led by the service owner and supported by designated PTJ coordinators until workload evidence justifies a dedicated business-analysis / service-delivery post. Creative production, advanced security, legal, procurement, and university-wide ICT authority remain shared or centrally coordinated where appropriate.
 
 ---
 
