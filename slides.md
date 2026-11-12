@@ -35,6 +35,84 @@ mdc: true
   font-size: 0.78em;
   font-weight: 600;
 }
+
+.org-head {
+  width: fit-content;
+  margin: 0.8rem auto 0.45rem;
+  padding: 0.55rem 1.4rem;
+  border-radius: 0.7rem;
+  background: #0f172a;
+  color: white;
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.org-grid, .staffing-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.org-card, .staffing-card {
+  border: 1px solid #cbd5e1;
+  border-top: 5px solid #0f766e;
+  border-radius: 0.65rem;
+  padding: 0.75rem;
+  background: #f8fafc;
+  min-height: 7.4rem;
+}
+
+.org-card strong {
+  display: block;
+  color: #0f172a;
+  font-size: 0.8em;
+  line-height: 1.15;
+  margin-bottom: 0.45rem;
+}
+
+.org-card span {
+  display: block;
+  color: #475569;
+  font-size: 0.62em;
+  line-height: 1.35;
+}
+
+.org-card:nth-child(2) { border-top-color: #2563eb; }
+.org-card:nth-child(3) { border-top-color: #d97706; }
+.org-card:nth-child(4) { border-top-color: #7c3aed; }
+.org-card:nth-child(5) { border-top-color: #db2777; }
+
+.staffing-card {
+  min-height: 9rem;
+  border-top-color: #94a3b8;
+}
+
+.staffing-card.recommended {
+  border: 2px solid #0f766e;
+  border-top: 7px solid #0f766e;
+  background: #f0fdfa;
+  transform: translateY(-0.25rem);
+}
+
+.staffing-card h3 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1em;
+}
+
+.staffing-card .headcount {
+  color: #0f766e;
+  font-size: 1.55em;
+  font-weight: 800;
+}
+
+.staffing-card p {
+  margin: 0.35rem 0 0;
+  color: #475569;
+  font-size: 0.7em;
+  line-height: 1.3;
+}
 </style>
 
 ---
@@ -125,28 +203,47 @@ The unit should own the complete service lifecycle:
 **Strategy → Design → Development → Deployment → Security → Operations → Analytics → Optimization**
 
 ---
+class: org-structure
+---
 
 # Proposed organization structure
 
-```mermaid
-flowchart TB
-  H["Head of Web and Digital Services"]
-  H --> A["Platform Engineering and DevOps"]
-  H --> B["Web Applications and AI Engineering"]
-  H --> C["Digital Experience and Marketing"]
-  H --> D["Data and Digital Intelligence"]
-  H --> E["Governance and Service Delivery"]
-```
+<div class="org-head">Head of Web &amp; Digital Services</div>
 
-| Domain | Functional roles |
-| --- | --- |
-| Platform | DevOps / SRE · infrastructure · security and reliability |
-| Web and AI | Website / CMS · web applications · integrations · AI and automation |
-| Experience | UX/UI · accessibility · SEO · digital marketing |
-| Intelligence | Web analytics · marketing analytics · BI and data engineering |
-| Governance | Business analysis · PMO · PTJ coordination · standards and training |
+<div class="org-grid">
+  <div class="org-card">
+    <strong>Platform Engineering<br/>and DevOps</strong>
+    <span>DevOps / SRE</span>
+    <span>Infrastructure</span>
+    <span>Security &amp; reliability</span>
+  </div>
+  <div class="org-card">
+    <strong>Web Applications<br/>and AI Engineering</strong>
+    <span>Website / CMS</span>
+    <span>Web applications</span>
+    <span>Integrations · AI</span>
+  </div>
+  <div class="org-card">
+    <strong>Digital Experience<br/>and Marketing</strong>
+    <span>UX / UI</span>
+    <span>Accessibility</span>
+    <span>SEO · campaigns</span>
+  </div>
+  <div class="org-card">
+    <strong>Data &amp; Digital<br/>Intelligence</strong>
+    <span>Web analytics</span>
+    <span>Marketing analytics</span>
+    <span>BI · data engineering</span>
+  </div>
+  <div class="org-card">
+    <strong>Governance &amp;<br/>Service Delivery</strong>
+    <span>Business analysis</span>
+    <span>PTJ coordination</span>
+    <span>Standards · training</span>
+  </div>
+</div>
 
-The structure defines the capabilities that must be covered. It does not require five separate departments or one permanent post for every role.
+<div class="mt-5 text-sm muted">Functional domains define the capabilities that must be covered; they do not require five separate departments or one permanent post for every role.</div>
 
 ---
 
@@ -216,11 +313,23 @@ Use this as a visual pause before discussing the staffing model. Replace the pla
 
 # Practical staffing model
 
-| Model | Core staffing | Purpose |
-| --- | --- | --- |
-| Lean | 6 core staff + shared specialists | Protect essential operations and reduce single-person dependency |
-| Recommended | 10 core staff + shared specialists | Separate platform, engineering, experience, intelligence, and governance |
-| Mature | 16 core staff across five domains | Support university-wide scale, resilience, and continuous improvement |
+<div class="staffing-grid">
+  <div class="staffing-card">
+    <h3>Lean</h3>
+    <div class="headcount">6</div>
+    <p>Core staff plus shared specialists. Protect essential operations and reduce single-person dependency.</p>
+  </div>
+  <div class="staffing-card recommended">
+    <h3>Recommended</h3>
+    <div class="headcount">10</div>
+    <p>Separate platform, engineering, experience, intelligence, and governance capabilities.</p>
+  </div>
+  <div class="staffing-card">
+    <h3>Mature</h3>
+    <div class="headcount">16</div>
+    <p>Five domains with enough depth for university-wide scale, resilience, and continuous improvement.</p>
+  </div>
+</div>
 
 The recommended model is a planning target, not an immediate establishment request.
 
