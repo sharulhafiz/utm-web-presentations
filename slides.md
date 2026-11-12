@@ -10,7 +10,7 @@ mdc: true
 
 <style>
 :root {
-  --slidev-theme-primary: #0f766e;
+  --slidev-theme-primary: #5c001f;
 }
 
 .slidev-layout h1 {
@@ -19,7 +19,7 @@ mdc: true
 }
 
 .slidev-layout h2 {
-  color: #0f766e;
+  color: #5c001f;
 }
 
 .muted {
@@ -30,8 +30,8 @@ mdc: true
   display: inline-block;
   padding: 0.25rem 0.65rem;
   border-radius: 999px;
-  background: #ccfbf1;
-  color: #115e59;
+  background: #ffffab;
+  color: #5c001f;
   font-size: 0.78em;
   font-weight: 600;
 }
@@ -41,7 +41,7 @@ mdc: true
   margin: 0.8rem auto 0.45rem;
   padding: 0.55rem 1.4rem;
   border-radius: 0.7rem;
-  background: #0f172a;
+  background: #5c001f;
   color: white;
   font-weight: 700;
   font-size: 1.05em;
@@ -56,7 +56,7 @@ mdc: true
 
 .org-card, .staffing-card {
   border: 1px solid #cbd5e1;
-  border-top: 5px solid #0f766e;
+  border-top: 5px solid #5c001f;
   border-radius: 0.65rem;
   padding: 0.75rem;
   background: #f8fafc;
@@ -78,10 +78,10 @@ mdc: true
   line-height: 1.35;
 }
 
-.org-card:nth-child(2) { border-top-color: #2563eb; }
-.org-card:nth-child(3) { border-top-color: #d97706; }
-.org-card:nth-child(4) { border-top-color: #7c3aed; }
-.org-card:nth-child(5) { border-top-color: #db2777; }
+.org-card:nth-child(2) { border-top-color: #f8be17; }
+.org-card:nth-child(3) { border-top-color: #c2410c; }
+.org-card:nth-child(4) { border-top-color: #64748b; }
+.org-card:nth-child(5) { border-top-color: #5c001f; }
 
 .staffing-card {
   min-height: 9rem;
@@ -89,9 +89,9 @@ mdc: true
 }
 
 .staffing-card.recommended {
-  border: 2px solid #0f766e;
-  border-top: 7px solid #0f766e;
-  background: #f0fdfa;
+  border: 2px solid #5c001f;
+  border-top: 7px solid #5c001f;
+  background: #fffde8;
   transform: translateY(-0.25rem);
 }
 
@@ -102,7 +102,7 @@ mdc: true
 }
 
 .staffing-card .headcount {
-  color: #0f766e;
+  color: #5c001f;
   font-size: 1.55em;
   font-weight: 800;
 }
@@ -112,6 +112,16 @@ mdc: true
   color: #475569;
   font-size: 0.7em;
   line-height: 1.3;
+}
+
+.slidev-layout::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.35rem;
+  background: linear-gradient(90deg, #5c001f 0 62%, #f8be17 62% 84%, #ffffab 84% 100%);
 }
 </style>
 
@@ -124,7 +134,9 @@ class: text-center
 
 ## A multidisciplinary operating model for the university web ecosystem
 
-<div class="mt-8 muted">Proposal for discussion · November 2026</div>
+<div class="tag mb-5">UTM WEB &amp; DIGITAL COMMUNICATION</div>
+
+<div class="mt-4 muted">Working proposal for management discussion · November 2026</div>
 
 ::: notes
 This is a working proposal. The objective is to define the functions required to operate university web services end to end, not to prescribe an immediate headcount.
@@ -132,11 +144,11 @@ This is a working proposal. The objective is to define the functions required to
 
 ---
 
-# The decision we need to make
+# The management decision
 
-Should university web management continue to be treated as a narrow webmaster or full-stack developer function?
+UTM’s web function now supports public-facing services, internal workflows, data collection, campaigns, and digital transformation. It should be structured as a digital service capability, not treated as a single webmaster role.
 
-Or should it be recognized as a coordinated digital service with distinct capabilities for:
+The proposed model protects distinct capabilities for:
 
 - Platform operations
 - Software and AI engineering
@@ -153,13 +165,13 @@ The proposal separates functional responsibilities from individual posts. One of
 layout: two-cols
 ---
 
-# Why the current model is under pressure
+# Why the operating model must evolve
 
-- More websites, applications, integrations, and data sources
-- Higher expectations for availability, speed, security, and accessibility
+- More websites, applications, integrations, and data sources to operate
+- Higher expectations for availability, speed, security, accessibility, and measurable impact
 - Growing use of analytics, automation, AI, and digital campaigns
-- Operational knowledge concentrated in a small number of individuals
-- Technical decisions often made after requirements and procurement are already fixed
+- Operational knowledge concentrated in too few individuals
+- Technical consequences considered too late in requirements and procurement
 
 ::right::
 
