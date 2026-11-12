@@ -126,46 +126,64 @@ The unit should own the complete service lifecycle:
 
 ---
 
-# Five functional teams
+# Proposed organization structure
 
 ```mermaid
 flowchart TB
-  H[Head of Web and Digital Services]
-  H --> A[Platform Engineering and DevOps]
-  H --> B[Web Applications and AI Engineering]
-  H --> C[Digital Experience and Marketing]
-  H --> D[Data and Digital Intelligence]
-  H --> E[Governance and Service Delivery]
+  H["Head of Web and Digital Services"]
+  H --> A["Platform Engineering and DevOps"]
+  H --> B["Web Applications and AI Engineering"]
+  H --> C["Digital Experience and Marketing"]
+  H --> D["Data and Digital Intelligence"]
+  H --> E["Governance and Service Delivery"]
 ```
 
-These are functional domains. They do not imply that five separate departments must be created immediately.
+| Domain | Functional roles |
+| --- | --- |
+| Platform | DevOps / SRE · infrastructure · security and reliability |
+| Web and AI | Website / CMS · web applications · integrations · AI and automation |
+| Experience | UX/UI · accessibility · SEO · digital marketing |
+| Intelligence | Web analytics · marketing analytics · BI and data engineering |
+| Governance | Business analysis · PMO · PTJ coordination · standards and training |
+
+The structure defines the capabilities that must be covered. It does not require five separate departments or one permanent post for every role.
 
 ---
 
 layout: two-cols
 ---
 
-# What each team owns
+# Functional roles inside the unit
 
 ### Platform Engineering and DevOps
-Hosting, deployment, observability, performance, backups, recovery, and runtime reliability.
+- DevOps / SRE
+- Infrastructure and runtime reliability
+- Security implementation and incident readiness
 
 ### Web Applications and AI Engineering
-Websites, CMS extensions, applications, APIs, SSO, chatbots, agents, testing, and maintainability.
+- Website and CMS engineering
+- Web applications and integrations
+- AI, chatbot, and workflow automation
 
 ### Digital Experience and Marketing
-UX, accessibility, visual implementation, SEO, content presentation, campaigns, and conversion journeys.
+- UX/UI and accessibility
+- SEO and digital marketing
+- Content and conversion experience
 
 ::right::
 
 ### Data and Digital Intelligence
-Web analytics, marketing analytics, search visibility, dashboards, attribution, benchmarking, and insight.
+- Web and marketing analytics
+- BI, data engineering, and dashboards
+- Search visibility and impact measurement
 
 ### Governance and Service Delivery
-PTJ coordination, standards, audits, requirements, documentation, training, and stakeholder acceptance.
+- Business analysis and PMO
+- PTJ coordination and service standards
+- Documentation, training, and acceptance
 
 ::: notes
-The most important distinction is between a function and a post. Functions should be protected even when staffing is lean.
+Security is a cross-cutting responsibility. The Web Unit implements web and application controls while the central ICT security function retains university-wide authority.
 :::
 
 ---
@@ -198,21 +216,46 @@ Use this as a visual pause before discussing the staffing model. Replace the pla
 
 # Practical staffing model
 
-| Model | Indicative capability | Use |
+| Model | Core staffing | Purpose |
 | --- | --- | --- |
-| Lean | 6 core staff plus shared specialists | Stabilize essential operations and separate critical responsibilities |
-| Recommended | 10 core staff plus shared specialists | Balance operations, engineering, analytics, governance, and experience |
+| Lean | 6 core staff + shared specialists | Protect essential operations and reduce single-person dependency |
+| Recommended | 10 core staff + shared specialists | Separate platform, engineering, experience, intelligence, and governance |
 | Mature | 16 core staff across five domains | Support university-wide scale, resilience, and continuous improvement |
 
 The recommended model is a planning target, not an immediate establishment request.
 
-First measure:
+Before requesting posts, measure:
 
 - Number and criticality of services
 - Technical complexity and operational load
 - Coverage required outside office hours
 - Security and compliance exposure
 - Dependency on individual officers
+
+---
+
+layout: two-cols
+---
+
+# Recommended initial model: 10 core staff
+
+### Core establishment
+
+1. Head / Web and Digital Service Owner
+2. DevOps / SRE and Infrastructure Engineer
+3. Security and Reliability Engineer
+4. Website and CMS Engineer
+5. Web Applications and Integration Engineer
+
+::right::
+
+6. AI and Automation Engineer
+7. UX/UI and Accessibility Officer
+8. SEO and Digital Marketing Officer
+9. Web and Marketing Analytics Officer
+10. BI, Data, and Governance Officer
+
+Creative production, advanced security, legal, procurement, and university-wide ICT authority remain shared or centrally coordinated where appropriate.
 
 ---
 
