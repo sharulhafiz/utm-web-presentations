@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">UTM Web and Digital Services placeholder visual</title>
+  <desc id="desc">Abstract network of connected digital service domains.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#134e4a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#bef264"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.28" stroke="#99f6e4" stroke-width="3" fill="none">
+    <path d="M180 580 L470 280 L800 460 L1110 190 L1410 430"/>
+    <path d="M180 580 L520 710 L800 460 L1170 690 L1410 430"/>
+  </g>
+  <g fill="url(#accent)" stroke="#ecfeff" stroke-width="6">
+    <circle cx="180" cy="580" r="28"/>
+    <circle cx="470" cy="280" r="34"/>
+    <circle cx="800" cy="460" r="44"/>
+    <circle cx="1110" cy="190" r="32"/>
+    <circle cx="1410" cy="430" r="30"/>
+    <circle cx="520" cy="710" r="24"/>
+    <circle cx="1170" cy="690" r="26"/>
+  </g>
+  <text x="120" y="130" fill="#ecfeff" font-family="Arial, sans-serif" font-size="54" font-weight="700">WEB + DIGITAL SERVICES</text>
+  <text x="120" y="195" fill="#99f6e4" font-family="Arial, sans-serif" font-size="28">platform · engineering · experience · intelligence · governance</text>
+  <rect x="120" y="770" width="440" height="7" rx="4" fill="url(#accent)"/>
+</svg>
